@@ -1,0 +1,91 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+.pixel-car{
+    width: 70px;
+    height: 50px;
+    background-image: url("img/pixelcar/pixelcar.png");
+    background-size: 70px 50px;
+    position: relative;
+    top: 150px;
+}
+.police-car{
+    width: 20px;
+    height: 40px;
+    background-image: url("img/policecar/policecar.png");
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: police-carMov 2s infinite linear;
+}
+
+.space{
+    width: 200px;
+    height: 100px;
+    background-color: #d9d7d7;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+.start{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+@keyframes police-carMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    20% {
+         top: 130px
+     }
+    40% {
+        top: 100px
+    }
+    50% {
+        top: 80px
+    }
+    60% {
+        top: 100px
+    }
+    80% {
+        top: 130px
+    }
+    100% {
+        top: 150px;
+    }
+}
